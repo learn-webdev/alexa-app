@@ -1,0 +1,13 @@
+{
+  "name": "INSERT NAME HERE",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "INSERT ROLE HERE",
+  "runtime": "nodejs4.3",
+  "handler": "lib.handler",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.lambda.config.js",
+    "clean": "rm -rf lib"
+  }
+}

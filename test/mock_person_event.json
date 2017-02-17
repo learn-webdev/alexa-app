@@ -1,0 +1,29 @@
+{
+  "session": {
+    "sessionId": "SessionId.2c3dc9a0-7bf2-4da2-9976-4ab1fcf43e90",
+    "application": {
+      "applicationId": "amzn1.ask.skill.0eea58d7-d2a3-444c-a606-b658f6f28ab1"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "someUserId"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.3da8f363-6d5a-4dc3-91f0-f01b777a29f2",
+    "locale": "en-US",
+    "timestamp": "2017-02-17T01:59:41Z",
+    "intent": {
+      "name": "person",
+      "slots": {
+        "NAME": {
+          "name": "NAME",
+          "value": "Guest 1"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

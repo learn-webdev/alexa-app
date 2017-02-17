@@ -1,0 +1,21 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "someSessionId",
+    "attributes": {},
+    "user": {
+      "userId": "someUserId"
+    },
+    "application": {
+      "applicationId": 1
+    }
+  },
+  "request": {
+    "locale": "en-US",
+    "timestamp": "2016-10-27T21:06:28Z",
+    "type": "IntentRequest",
+    "intent": {
+      "name": "rsvps"
+    }
+  }
+}
