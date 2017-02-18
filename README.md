@@ -2,6 +2,8 @@
 
 This repository contains the source code for the Learn WebDev Meetup Alexa App.
 
+See the [slides](https://docs.google.com/presentation/d/1jKkvbL-_pGGWjxryY-b7cxD9JgUJBm5LcSTo0eFZFC4/edit#slide=id.g35ed75ccf_022).
+
 
 ## Skills
 
