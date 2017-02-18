@@ -1,3 +1,6 @@
+// We use a library to called alexa-app to make it much easier to
+// interpret input from Alexa, and format output to send back to Alexa.
+// See the documentation here: https://github.com/alexa-js/alexa-app
 import alexa from 'alexa-app'
 import fetch from 'node-fetch'
 
