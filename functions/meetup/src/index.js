@@ -108,4 +108,86 @@ app.intent(
   },
  )
 
+/* ########################## */
+/*      some intent ideas     */
+/*      do one of these or    */
+/*        make your own!      */
+/* ########################## */
+
+
+// This intent repeats a number spoken by the user.
+// "Alexa, ask learn webdev to repeat 3"
+// > "You asked me to repeat 3"
+// app.intent(
+//   'repeater',
+//   {
+//     slots: { NUMBER: 'AMAZON.NUMBER' },
+//     // Fill in the blank
+//     // utterances: [
+//       // '...',
+//     // ],
+//   },
+//   (req, response) => {
+//     // Get the number spoken by the user.
+//     const number = req.slot('NUMBER')
+
+//     // Tell Alexa to repeat the number
+//   },
+// )
+
+// This intent adds two numbers spoken by the user.
+// "Alexa, ask learn webdev to add 3 and 4"
+// > "The sum is 7"
+// app.intent(
+//   'adder',
+//   {
+//     slots: {
+//       // ...
+//     },
+//     // utterances: [
+//       // '...',
+//     // ],
+//   },
+//   (req, response) => {
+//     // Get the numbers spoken by the user.
+//
+//     // Tell Alexa to speak the sum of the numbers
+//   },
+// )
+
+// This intent spells a word spoken by the user.
+// "Alexa, ask learn webdev how to spell cat"
+// > "Cat is spelled c a t"
+// Note: Lookup SSML to see how to get Alexa to spell out a word.
+// app.intent(
+//   'speller',
+//   {
+//     slots: {
+//       // ...
+//     },
+//     utterances: [
+//       // '...',
+//     ],
+//   },
+//   (req, response) => {
+//     // Get the word spoken by the user.
+//
+//     // Tell Alexa to spell out the word.
+//   },
+// )
+
+// This intent looks up how many people have RSVPed "no" to the meetup.
+// "Alexa, ask learn webdev how many people r s v peed no"
+// > "3 people have r s v peed no"
+// app.intent(
+//   'rsvpno',
+//   {
+//     // utterances: [
+//       // '...',
+//     // ],
+//   },
+//   (req, response) => {
+//     // Look up how many people rsvped no and have alexa speak the answer
+//   },
+// )
 export const handler = app.lambda()
