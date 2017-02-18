@@ -47,8 +47,8 @@ app.intent(
 
     // If Alexa hears these phrases, this intent will run.
     utterances: [
-      'will {-|NAME} be at the {next |}{meetup|event}',
-      'if {-|NAME} will be at the {next |}{meetup|event}',
+      'will {-|NAME} be at the {next |}{meetup|event}{ today|}',
+      'if {-|NAME} will be at the {next |}{meetup|event}{ today|}',
     ],
   },
   (req, response) => {
