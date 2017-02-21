@@ -40,7 +40,7 @@ app.intent(
     // asynchronous intent.
     return false
   },
- )
+)
 
 app.intent(
   'person',
@@ -61,12 +61,13 @@ app.intent(
     // tell the user and send the response before we send the request.
     if (!nameToLookFor) {
       // Speak this error message out loud.
-      response.say('Sorry, I did not hear a name')
+      response.say('Sorry, I did not hear a name. Please ask a question like will Eric be at the meetup?')
+      response.shouldEndSession(false)
 
       // Show a card on the Alexa app.
       response.card({
         type: 'Simple',
-        content: 'Did not hear a name',
+        content: 'Sorry, I did not hear a name. Please ask a question like will Eric be at the meetup?',
       })
 
       // Return now so that the rest of the function does not get evaluated.
@@ -109,7 +110,37 @@ app.intent(
     // asynchronous intent.
     return false
   },
- )
+)
+
+app.intent('AMAZON.HelpIntent', {
+  utterances: ['help'],
+}, (req, res) => {
+  res.say('Learn Web Dev provides information about the meetup group. Try asking how many people will be at the next meetup or asking if a specific person will be there.')
+  res.shouldEndSession(false)
+  res.send()
+})
+
+app.intent('AMAZON.StopIntent', {
+  utterances: ['stop'],
+}, (req, res) => {
+  res.say('Goodbye')
+  res.shouldEndSession(true)
+  res.send()
+})
+
+app.intent('AMAZON.CancelIntent', {
+  utterances: ['cancel'],
+}, (req, res) => {
+  res.say('Goodbye')
+  res.shouldEndSession(true)
+  res.send()
+})
+
+app.launch((req, res) => {
+  res.say('This is Learn WebDev. Ask me about how many people will be at the next meetup or if a specific person will be there.')
+  res.shouldEndSession(false, 'Say help if you need help or exit to exit. What would you like to know about the next meetup?')
+  res.send()
+})
 
 /* ########################## */
 /*      some intent ideas     */
